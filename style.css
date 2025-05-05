@@ -1,0 +1,92 @@
+/*this specifies the font of the text in the body, changes the background of the webpage and specifies the color of the text in the body*/
+body {
+    background-image: url(images/image2.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    color: white;
+}
+/*this specifies the font family od heading 1, its size, its color,and where its aligned on the webpages*/
+h1{
+    font-family: 'times new roman',Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #054a3f;
+}
+.special-font{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+/*this specifies the background color of the navigation bar, its height, and also speacifies the color of the text in the navigation bar and where it is aligned*/
+nav {
+    background-color: teal;
+    height: 150px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/*this specifies the content in the navigation bar*/
+nav a {
+    font-family: "times new roman", Times,serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+
+}
+/*this shows the maximum width the webpage can adapt to*/
+@media (max-width: 1200px) {
+    
+}
+/*this specifies the size of the logo image*/
+.logo-container img {
+    width: 50px
+    height auto;
+    margin-right: 10px;
+}
+/*this specifies the size on the images in products*/
+.products img{
+    width: 230px;
+    height: auto;
+    object-fit: cover;
+}
+/*this specifies how wide the enquiry form is and how it will look*/
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+/*this specifies how the form button should look and how it looks*/
+form button {
+    padding: 10px 20px;
+    background-color: azure;
+    border: none;
+    transition: all 0.3s;
+}
+/*this is for the form button to have a hover effect when the cursor is above it*/
+.form-button:hover {
+    background-color: #005f5f;
+    color: #333;
+    cursor: pointer;
+}
+/*this is to show when the focus is on the form button*/
+.form-button:focus{
+    outline: 3px solid turquoise;
+}
+/*this shows that the form button is pressed*/
+.form-button:active{
+    background-color: blue;
+    transition: scale(0.95);
+}
+/*this specifies the color of the footer, the font color in the footer, and when the text should appear on the page on the footer*/
+footer {
+    background: teal;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
