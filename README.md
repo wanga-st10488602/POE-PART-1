@@ -42,5 +42,24 @@ KoolShooters. 2021. Woman in Sports Bra and Black Shorts. [electronic print].  A
 Mizuno, K. 2022. Women with Bottles Walking. [electronic print].  Available at: <https://www.pexels.com/photo/women-with-bottles-walking-13740414/> [Accessed 13 March 2025].
 RDNE Stock Project. 2021. Woman in Blue Activewear Doing Stretching Exercise. [electronic print].  Available at:< https://www.pexels.com/photo/woman-in-blue-activewear-doing-stretching-exercise-7240207/> [Accessed 13 March 2025].
 
+Change log 
+20/02/25	First look at POE
+07/02/25	Work through the Proposals and get more information
+27/03/25	Added most basic information and added CSS page
+07/04/25	Finalized Part 1
+04/05/25 	Added more CSS tags to CSS page for the webpages adding color and some fonts and aligning some of the work 
+16/06/25	Changed contact page details
+          Changes alt tag for all images
+          Added meta tag keywords
+          Added sitemap.xml to repository 
+19/06/25	Got more information for the website
+20/06/25 	Added form validation
+          Added address
+          Added modal 
+          Added valid Instagram, email, and contact number
+          Added javascript
+
+
+
 
 
