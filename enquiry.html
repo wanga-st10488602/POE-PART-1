@@ -4,9 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Sustainable and Fashionable Athleisure Wear">
+        <meta name="keywords" content="fashion, sustainable, comfortable, fitness, athleisure">
         <!--This the title of the webpage-->
         <title>Wholeness Fitness Athleisure | Enquiry</title>
         <link rel="stylesheet" href="CSS/style.css">
+        
     </head>
     <body style="background-image: url(images/image2.jpg);"></body>
         <header>
@@ -27,18 +29,66 @@
                         <a href="contact.html">Contact</a>
             </nav>
         </header>
-            <h2>Enquiry</h2>
+
+            <div id="popupModal" class="modal">
+                <div class="modal-content">
+                 <span class="close" id="closeBtn">&times;</span>
+                 <h2>Form has been submitted</h2>
+                </div>
+            </div>
+        
+        <div class="form">
             <!--This is a form for enquiries-->
-            <form action="submit-form.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required><br>
-                <input type="email" name="email" placeholder="Your Email" required><br>
-                <input type="contact" name="contact" placeholder="Your Contact Number" required><br>
-                <textareaa name="message" placeholder="Your Message" required></textareaa><br>
-                <button type="submit">Send</button>
+            <form id="enquiryForm">
+                <input type="text" id="name" placeholder="name" required><br>
+                <input type="text" id="lastname" placeholder="surname" required>
+                <input type="email" id="email" placeholder="email" required><br>
+                <input type="contact" id="contact" placeholder="contact" required><br>
+                <textarea id="message" placeholder="message" required></textarea><br>
+                <button type="submit" id="submitBtn">Submit</button>
+
+                <div id="error" class="error"></div>
+                <div id="output"></div>
             </form>
+            </div>
+            <p id="response"></p>
+
+            <script>
+                const form= document.getElementById('enquiryForm');
+                const modal= document.getElementById('popupModal');
+                const closeBtn= document.getElementById('closeBtn');
+
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    modal.style.display = 'block'
+                    form.reset(); 
+                });
+
+                closeBtn.onclick = function() {
+                    modal.style.display ="none"
+                };
+
+                window.onclick = function (event) {
+                    if (event.target ==modal) {
+                        modal.style.display = "none"
+                    }
+                };
+              
+    </script>
+
+    <p>
+            <script>
+                var theDate=new Date()
+                document.write("&copy; " + theDate.getFullYear())
+                document.write(" - Wholeness Fitness Athleisure | Last modified: ")
+                var theModifiedDate=new Date (document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br>Powered by "GitHub" Web Hosting
+        </p>      
          <!--This is the footer section that contains the copyright information-->   
         <footer>
             <p>&copy; 2025 Wholeness Fitness Athleisure. All rights reserved.</p>
-        </footer>
+        </footer> 
     </body>    
 </html>
